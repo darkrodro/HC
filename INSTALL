@@ -1,0 +1,20 @@
+Instalar Ruby 1.9
+Instalar MySql 5.1
+Desde consola, en el mismo directorio que este archivo:
+	Cambiar datos de DB en el archivo config/database.yml
+	> gem install rails 
+	(deberia instalar Rails)
+	> bundle install
+	(instala otros gems que se neceistan, por ahora Mysql2... si esto falla por alguna razon, solo poner "gem install mysql2")
+	> rake db:create
+	(crea las bases de datos. Mysql de dev/prod y sqlite3 de test)
+	>rake db:migrate 
+	(crea las tablas en las bases)
+	> rails server
+	(levanta el server de rails... se puede usar la opcion -d para que lo levante como daemon, pero me falla)
+	
+
+
+	
+
+	

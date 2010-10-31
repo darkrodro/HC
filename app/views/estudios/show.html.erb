@@ -1,0 +1,15 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Nombre:</b>
+  <%= @estudio.nombre %>
+</p>
+
+<p>
+  <b>Arancel:</b>
+  <%= @estudio.arancel %>
+</p>
+
+
+<%= link_to 'Edit', edit_estudio_path(@estudio) %> |
+<%= link_to 'Back', estudios_path %>

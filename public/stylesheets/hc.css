@@ -1,0 +1,58 @@
+#page{
+	width: 1000px;
+	background-color: #fff;
+	margin: 0 auto 0 auto;
+	min-height: 500px;
+	border: 1px solid #bbb; 
+}
+
+#header{
+	height: 75px;
+	position: relative;
+	background-color: #beb;
+}
+
+#menu {
+	position: absolute;
+	bottom:0px;
+	right: 10px;
+}
+
+#menu_items{
+	list-style-type:none; 
+}
+
+#menu_items li{
+	margin:2px;
+	padding:2px;
+	border:1px solid #CCCCCC;
+	float:left;
+}
+
+#workspace {
+	margin:10px;
+	position: relative;
+}
+
+#admin_menu {
+	float:left;
+	background-color: #bbe;
+}
+
+#admin_menu_items{
+	list-style-type:none;
+	left:-20px;
+	position: relative; 
+}
+
+#admin_menu_items li{
+	margin:2px;
+	padding:2px 4px 2px 4px;
+	border:1px solid #CCCCCC;
+	position: relative;
+}
+
+#admin_content{
+	margin-left: 20px;
+	float:left;
+}

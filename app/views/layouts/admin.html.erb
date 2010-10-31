@@ -1,0 +1,14 @@
+<% content_for :content do %>  
+	<div id="admin_menu">
+		<ul id="admin_menu_items">
+			<li>Estudios</li>
+			<li>Analisis</li>
+			<li>Datos Medicos</li>
+			<li>Encabezado y Pie</li>			
+		</ul>
+	</div>
+	<div id="admin_content">  
+		<%= yield %>
+	</div> 
+<% end %> 
+<%= render :file => 'layouts/application' %> 

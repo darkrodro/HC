@@ -1,0 +1,9 @@
+# Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
+
+one:
+  nombre: MyString
+  arancel: 9.99
+
+two:
+  nombre: MyString
+  arancel: 9.99

@@ -1,0 +1,5 @@
+
+page.replace_html dom_id(@estudio)+'.nombre', @estudio.nombre
+page.replace_html dom_id(@estudio)+'.arancel', @estudio.arancel
+
+page.hide('pop_up')

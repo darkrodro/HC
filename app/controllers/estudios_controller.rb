@@ -18,7 +18,6 @@ class EstudiosController < ApplicationController
     @estudio = Estudio.find(params[:id])
 
     respond_to do |format|
-      format.html # show.html.erb
       format.xml  { render :xml => @estudio }
     end
   end
@@ -29,14 +28,18 @@ class EstudiosController < ApplicationController
     @estudio = Estudio.new
 
     respond_to do |format|
-      format.html # new.html.erb
       format.xml  { render :xml => @estudio }
+      format.js {render :form}
     end
   end
 
   # GET /estudios/1/edit
   def edit
     @estudio = Estudio.find(params[:id])
+
+    respond_to do |format|
+      format.js {render :form}
+    end
   end
 
   # POST /estudios
@@ -46,11 +49,10 @@ class EstudiosController < ApplicationController
 
     respond_to do |format|
       if @estudio.save
-        format.html { redirect_to(@estudio, :notice => 'Estudio was successfully created.') }
-        format.xml  { render :xml => @estudio, :status => :created, :location => @estudio }
+        @class_index = 'new'
+        format.js
       else
-        format.html { render :action => "new" }
-        format.xml  { render :xml => @estudio.errors, :status => :unprocessable_entity }
+        format.js { render :form }
       end
     end
   end
@@ -62,11 +64,9 @@ class EstudiosController < ApplicationController
 
     respond_to do |format|
       if @estudio.update_attributes(params[:estudio])
-        format.html { redirect_to(@estudio, :notice => 'Estudio was successfully updated.') }
-        format.xml  { head :ok }
+        format.js
       else
-        format.html { render :action => "edit" }
-        format.xml  { render :xml => @estudio.errors, :status => :unprocessable_entity }
+        format.js { render :form }
       end
     end
   end

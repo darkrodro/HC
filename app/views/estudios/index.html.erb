@@ -1,25 +1,24 @@
-<h1>Listing estudios</h1>
+<div class="admin_titulo">Estudios</div>
 
-<table>
+<table class="admin_tabla">
   <tr>
     <th>Nombre</th>
-    <th>Arancel</th>
-    <th></th>
-    <th></th>
+    <th align="right">Arancel</th>
     <th></th>
   </tr>
 
-<% @estudios.each do |estudio| %>
-  <tr>
-    <td><%= estudio.nombre %></td>
-    <td><%= estudio.arancel %></td>
-    <td><%= link_to 'Show', estudio %></td>
-    <td><%= link_to 'Edit', edit_estudio_path(estudio) %></td>
-    <td><%= link_to 'Destroy', estudio, :confirm => 'Are you sure?', :method => :delete %></td>
-  </tr>
-<% end %>
+<%
+	@class_index = 1;
+ @estudios.each do |estudio| 
+	@class_index = (@class_index+1) % 2
+%>
+	<%=render :partial=>'linea', :object=>estudio, :locals=>{:class_index=>@class_index}%>
+<%end%>
+<tr id="estudios_footer">
+	<td colspan="3" class="admin_tabla_footer">
+		<%= button_to 'Nuevo Estudio', new_estudio_path, :remote=>true %>
+	</td>
+</tr>
 </table>
 
-<br />
-
-<%= link_to 'New Estudio', new_estudio_path %>
+<%=render 'shared/popup'%>

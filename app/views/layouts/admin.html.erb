@@ -1,14 +1,18 @@
-<% content_for :content do %>  
-	<div id="admin_menu">
-		<ul id="admin_menu_items">
-			<li>Estudios</li>
-			<li>Analisis</li>
-			<li>Datos Medicos</li>
-			<li>Encabezado y Pie</li>			
-		</ul>
-	</div>
-	<div id="admin_content">  
-		<%= yield %>
-	</div> 
+<% content_for :content do %>
+	<table cellspacing="0" style="height:100%">
+		<tr>
+			<td id="admin_menu">
+				<ul id="admin_menu_items">
+					<li><%= link_to 'Estudios', estudios_path %></li>
+					<li>Analisis</li>
+					<li>Datos Medicos</li>
+					<li>Encabezado y Pie</li>			
+				</ul>		
+			</td>
+			<td id="admin_content">
+				<%= yield %>				
+			</td>
+		</tr>
+	</table>  
 <% end %> 
 <%= render :file => 'layouts/application' %> 

@@ -1,0 +1,3 @@
+page.insert_html :before, :estudios_footer, :partial=>'linea', :object=>@estudio, :locals=>{:class_index=>@class_index}
+
+page.hide('pop_up')

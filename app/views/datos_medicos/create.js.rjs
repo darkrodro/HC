@@ -1,0 +1,3 @@
+page.insert_html :before, :datosMedicos_footer, :partial=>'linea', :object=>@datoMedico, :locals=>{:class_index=>@class_index}
+
+page.hide('pop_up')

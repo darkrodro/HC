@@ -1,10 +1,12 @@
 <div class="admin_titulo">Estudios</div>
 
+<div class="admin_subtitulo">Activos</div>
+
 <table class="admin_tabla">
   <tr>
     <th>Nombre</th>
     <th align="right">Arancel</th>
-    <th></th>
+    <th class="admin_tabla_actions"></th>
   </tr>
 
 <%
@@ -16,9 +18,36 @@
 <%end%>
 <tr id="estudios_footer">
 	<td colspan="3" class="admin_tabla_footer">
-		<%= button_to 'Nuevo Estudio', new_estudio_path, :remote=>true %>
+		<%= button_to 'Nuevo Estudio', new_estudio_path, :remote=>true, :method=>:get %>
 	</td>
 </tr>
 </table>
+
+<div class="admin_subtitulo">Eliminados</div>
+
+<table class="admin_tabla">
+  <tr>
+    <th>Nombre</th>
+    <th align="right">Arancel</th>
+    <th class="admin_tabla_actions"></th>
+  </tr>
+
+<%
+	@class_index = 1;
+ @estudios_eliminados.each do |estudio| 
+	@class_index = (@class_index+1) % 2
+%>
+	<tr class="admin_tabla_linea_<%=@class_index%>">
+	<td><%= estudio.nombre%></td>
+	<td align="right"><%= estudio.arancel %></td>
+	<td align="right"><%= link_to 'Restaurar', restore_estudio_path(estudio) %></td>
+</tr>
+<%end%>
+<tr style="height:25px">
+	<td colspan="3" class="admin_tabla_footer">
+	</td>
+</tr>
+</table>
+
 
 <%=render 'shared/popup'%>

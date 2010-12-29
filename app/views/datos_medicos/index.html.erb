@@ -1,0 +1,51 @@
+<div class="admin_titulo">Datos Medicos</div>
+
+<div class="admin_subtitulo">Activos</div>
+
+<table class="admin_tabla">
+  <tr>
+    <th>Nombre</th>
+	<th class="admin_tabla_actions">Ordenar</th>
+    <th class="admin_tabla_actions"></th>
+  </tr>
+
+<%
+	@class_index = 1;
+ @datosMedicos.each do |datoMedico| 
+	@class_index = (@class_index+1) % 2
+%>
+	<%=render :partial=>'linea', :object=>datoMedico, :locals=>{:class_index=>@class_index}%>
+<%end%>
+<tr id="datosMedicos_footer">
+	<td colspan="3" class="admin_tabla_footer">
+		<%= button_to 'Nuevo Dato Medico', new_dato_medico_path, :remote=>true, :method=>:get %>
+	</td>
+</tr>
+</table>
+
+<div class="admin_subtitulo">Eliminados</div>
+
+<table class="admin_tabla">
+  <tr>
+    <th>Nombre</th>
+    <th class="admin_tabla_actions"></th>
+  </tr>
+
+<%
+	@class_index = 1;
+ @datosMedicos_eliminados.each do |datoMedico| 
+	@class_index = (@class_index+1) % 2
+%>
+	<tr class="admin_tabla_linea_<%=@class_index%>">
+	<td><%= datoMedico.nombre%></td>
+	<td align="right"><%= link_to 'Restaurar', restore_dato_medico_path(datoMedico) %></td>
+</tr>
+<%end%>
+<tr style="height:25px">
+	<td colspan="3" class="admin_tabla_footer">
+	</td>
+</tr>
+</table>
+
+
+<%=render 'shared/popup'%>

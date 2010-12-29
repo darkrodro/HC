@@ -14,13 +14,13 @@
 			</div>
 			<div id="menu">
 				<ul id="menu_items">
-					<li>Pacientes</li>
+					<li><%=link_to 'Pacientes', pacientes_path%></li>
 					<li><%=link_to 'Configuracion', estudios_path%></li>
 				</ul>				
 			</div>
 		</div>
 		<div id="workspace">
-			<%= yield :content %>	
+			<%= content_for?(:content) ? yield(:content) : yield%>	
 		</div>
 	</div>
 </body>

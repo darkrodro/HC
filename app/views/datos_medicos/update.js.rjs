@@ -1,0 +1,4 @@
+
+page.replace_html dom_id(@datoMedico)+'.nombre', @datoMedico.nombre
+
+page.hide('pop_up')

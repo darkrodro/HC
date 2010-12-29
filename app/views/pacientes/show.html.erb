@@ -1,0 +1,38 @@
+﻿<p id="notice"><%= notice %></p>
+
+<table id="paciente_datos">
+	<tr>
+		<td class="campo">Documento</td>
+		<td class="dato"><%= @paciente.documento %></td>
+		<td class="campo">Sexo</td>
+		<td class="dato"><%= @paciente.sexo %></td>
+	</tr>
+	<tr>
+		<td class="campo">Fecha de nacimiento</td>
+		<td class="dato"><%= @paciente.fecha_nacimiento %></td>
+		<td class="campo">Telefono</td>
+		<td class="dato"><%= @paciente.telefono %></td>
+	</tr>
+	<tr>
+		<td class="campo">Obra Social</td>
+		<td class="dato"><%= @paciente.obra_social.force_encoding('utf-8') %></td>
+		<td class="campo">Numero de Obra Social</td>
+		<td class="dato"><%= @paciente.obra_social_numero %></td>
+	</tr>
+	<tr>
+		<td class="campo">Profesion</td>
+		<td class="dato"><%= @paciente.profesion.force_encoding('utf-8') %></td>
+		<td class="campo"></td>
+		<td class="dato"></td>
+	</tr>
+	<tr>
+		<td class="campo">Domicilio</td>
+		<td colspan="3" class="dato"><%= simple_format @paciente.domicilio.force_encoding('utf-8') %></td>
+	</tr>
+
+</table>
+
+<div class="actions" style="margin-right:10px">
+<%= button_to 'Editar', edit_paciente_path(@paciente), :method=>:get %>
+</div>
+

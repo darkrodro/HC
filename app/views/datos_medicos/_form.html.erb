@@ -1,0 +1,21 @@
+
+<%= form_for(@datoMedico, :remote=>true) do |f| %>
+  <% if @datoMedico.errors.any? %>
+    <div id="error_explanation">
+      <h2>No se pudo guardar el datoMedico debido a <%= pluralize(@datoMedico.errors.count, "error", "errores") %>:</h2>
+
+      <ul>
+      <% @datoMedico.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+  <div class="field">
+    <%= f.label :nombre %><br />
+    <%= f.text_field :nombre %>
+  </div>
+  <div class="actions">
+    <%= f.submit 'Guardar'%>
+  </div>
+<% end %>

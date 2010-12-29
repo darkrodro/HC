@@ -3,6 +3,7 @@ class CreateEstudios < ActiveRecord::Migration
     create_table :estudios do |t|
       t.string :nombre, :null=>false
       t.decimal :arancel, :precision=>8, :scale=>2
+      t.string :state
 
       t.timestamps
     end

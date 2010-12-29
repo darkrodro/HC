@@ -1,0 +1,53 @@
+<div class="admin_titulo">análisis</div>
+
+<div class="admin_subtitulo">Activos</div>
+
+<table class="admin_tabla">
+  <tr>
+    <th>Nombre</th>
+    <th align="right">Arancel</th>
+    <th class="admin_tabla_actions"></th>
+  </tr>
+
+<%
+	@class_index = 1;
+ @analisis.each do |analisis| 
+	@class_index = (@class_index+1) % 2
+%>
+	<%=render :partial=>'linea', :object=>analisis, :locals=>{:class_index=>@class_index}%>
+<%end%>
+<tr id="analisis_footer">
+	<td colspan="3" class="admin_tabla_footer">
+		<%= button_to 'Nuevo analisis', new_analisis_path, :remote=>true, :method=>:get %>
+	</td>
+</tr>
+</table>
+
+<div class="admin_subtitulo">Eliminados</div>
+
+<table class="admin_tabla">
+  <tr>
+    <th>Nombre</th>
+    <th align="right">Arancel</th>
+    <th class="admin_tabla_actions"></th>
+  </tr>
+
+<%
+	@class_index = 1;
+ @analisis_eliminados.each do |analisis| 
+	@class_index = (@class_index+1) % 2
+%>
+	<tr class="admin_tabla_linea_<%=@class_index%>">
+	<td><%= analisis.nombre%></td>
+	<td align="right"><%= analisis.arancel %></td>
+	<td align="right"><%= link_to 'Restaurar', restore_analisis_path(analisis) %></td>
+</tr>
+<%end%>
+<tr style="height:25px">
+	<td colspan="3" class="admin_tabla_footer">
+	</td>
+</tr>
+</table>
+
+
+<%=render 'shared/popup'%>

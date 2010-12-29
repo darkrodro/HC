@@ -1,0 +1,3 @@
+page.insert_html :before, :analisis_footer, :partial=>'linea', :object=>@analisis, :locals=>{:class_index=>@class_index}
+
+page.hide('pop_up')

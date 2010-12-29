@@ -5,7 +5,7 @@ Desde consola, en el mismo directorio que este archivo:
 	> gem install rails 
 	(deberia instalar Rails)
 	> bundle install
-	(instala otros gems que se neceistan, por ahora Mysql2... si esto falla por alguna razon, solo poner "gem install mysql2")
+	(instala otros gems que se neceistan, por ahora Mysql... si esto falla por alguna razon, solo poner "gem install mysql2")
 	> rake db:create
 	(crea las bases de datos. Mysql de dev/prod y sqlite3 de test)
 	>rake db:migrate 

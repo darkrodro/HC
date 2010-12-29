@@ -2,16 +2,37 @@
 # See http://github.com/svenfuchs/rails-i18n/tree/master/rails%2Flocale for starting points.
 
 es:
-  hello: "Hola Mundo cruel"
+
+  date:
+    formats:
+      # Use the strftime parameters for formats.
+      # When no format has been given, it uses default.
+      # You can provide other formats here if you like!
+      default: "%d/%m/%Y"
+      short: "%d de %b"
+      long: "%d de %B de %Y"
+
+    day_names: [Domingo, Lunes, Martes, Miércoles, Jueves, Viernes, Sábado]
+    abbr_day_names: [Dom, Lun, Mar, Mie, Jue, Vie, Sab]
+
+    # Don't forget the nil at the beginning; there's no such thing as a 0th month
+    month_names: [~, Enero, Febrero, Marzo, Abril, Mayo, Junio, Julio, Agosto, Septiembre, Octubre, Noviembre, Diciembre]
+    abbr_month_names: [~, Ene, Feb, Mar, Abr, May, Jun, Jul, Ago, Sep, Oct, Nov, Dic]
+    # Used in date_select and datime_select.
+    order:
+      - :day
+      - :month
+      - :year
+
   
   errors:
     # The default format to use in full error messages.
-    format: "El campo %{attribute} %{message}"
+    format: "El valor del campo %{attribute} %{message}"
 
     # The values :model, :attribute and :value are always available for interpolation
     # The value :count is available when applicable. Can be used for pluralization.
     messages:
-      inclusion: "is not included in the list"
+      inclusion: " no es uno de los valores permitidos"
       exclusion: "is reserved"
       invalid: "is invalid"
       confirmation: "doesn't match confirmation"
@@ -21,8 +42,8 @@ es:
       too_long: "is too long (maximum is %{count} characters)"
       too_short: "is too short (minimum is %{count} characters)"
       wrong_length: "is the wrong length (should be %{count} characters)"
-      not_a_number: "is not a number"
-      not_an_integer: "must be an integer"
+      not_a_number: "debe ser un numero"
+      not_an_integer: "debe ser un numero entero"
       greater_than: "must be greater than %{count}"
       greater_than_or_equal_to: "must be greater than or equal to %{count}"
       equal_to: "must be equal to %{count}"
@@ -30,3 +51,4 @@ es:
       less_than_or_equal_to: "must be less than or equal to %{count}"
       odd: "must be odd"
       even: "must be even"
+      taken: "ya esta en uso."

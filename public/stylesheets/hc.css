@@ -67,12 +67,12 @@
 
 table.admin_tabla{
 	border:1px solid;
-	margin:30px auto;
-	min-width: 400px;
+	margin:5px auto;
+	min-width: 500px;
 }
 
 table.admin_tabla td{
-	padding: 0 5px 0 5px;
+	padding: 0px 5px;
 }
 
 table.admin_tabla th{
@@ -99,6 +99,10 @@ table.admin_tabla td.admin_tabla_footer {
 	padding: 3px;
 }
 
+th.admin_tabla_actions {
+	width: 65px;
+}
+
 .button_link{
 	border: 1px solid;
 	padding: 2px;
@@ -122,6 +126,17 @@ table.admin_tabla td.admin_tabla_footer {
 	padding:10px 0px 10px 10px;
 	margin: 0px 0px 0px 0px; 
 	text-transform: uppercase;
+}
+
+.admin_subtitulo{
+	font-size: 12px;
+	width: 95%;
+	padding:2px 0px 0px 30px;
+	margin: 10px 5px 10px 5px; 
+	text-transform: uppercase;
+	font-weight: bold;
+	border-top: 1px solid #ccc;
+	border-bottom: 1px solid #ccc;
 }
 
 #pop_up {
@@ -168,15 +183,164 @@ div.actions {
   margin-right: -20px;
 }
 
-div.actions input, .admin_tabla_footer input{
+div.actions input, .admin_tabla_footer input, #busqueda_menu input, #visitas_action input, .doc_actions input{
 	border:1px solid;
 	font-size: 12px;
 	font-weight: bold;
 	text-transform: uppercase;
 }
 
-div.actions input:hover, .admin_tabla_footer input:hover{
+div.actions input:hover, .admin_tabla_footer input:hover, #busqueda_menu input:hover{
 	background: #ccc;
 }
 
+#busqueda_menu {
+	padding: 0px;
+	background-color: #bbe;
+	width: 100%;
+	height: 35px;
+}
 
+#paciente_titulo{
+	font-size: 25px;
+	width: 90%;
+	/* fallback*/
+    background: #bbe;
+    /* Mozilla: */
+    background: -moz-linear-gradient(left, #bbbbee, #ffffff);
+    /* Chrome, Safari:*/
+    background: -webkit-gradient(linear,
+                left top, right top, from(#bbbbee), to(#ffffff));
+    /* MSIE */
+    filter: progid:DXImageTransform.Microsoft.Gradient(
+                StartColorStr='#bbbbee', EndColorStr='#ffffff', GradientType=1);
+
+	padding:10px 0px 10px 10px;
+	margin: 0px 0px 0px 0px; 
+	text-transform: uppercase;
+}
+
+#paciente_datos{
+	margin:5px auto 0px auto;
+	width: 750px;
+}
+
+#paciente_datos td{
+	padding: 2px 5px 2px 5px;
+	width: 25%;
+	vertical-align: top;
+}
+
+#paciente_datos td p{
+	margin:0px;
+}
+
+#paciente_datos td.campo{
+	background: #8f8;
+	font-weight: bold;
+}
+
+#paciente_datos td.dato{
+	background: #afa;
+}
+
+#paciente_datos th.dato{
+	background: #4f4;
+}
+
+#paciente_datos th.actions{
+	background: #ccc;
+}
+
+#paciente_datos td.input{
+	background: #afa;
+}
+
+textarea {
+	width:99%;
+	height:60px;
+}
+
+#paciente_content{
+	padding:0px;
+}
+
+#ordenar a{
+	background-color:transparent;
+}
+
+#ordenar a img{
+	border:0px;
+	width:17px;
+	vertical-align: middle;
+	margin: 2px;
+}
+
+#ordenar a img:hover{
+	width:21px;
+	margin:0px;
+}
+
+.editable{
+	min-width: 75px;
+	margin: 0px;
+	padding: 0px;
+}
+
+.editable:hover { 
+	background: #ff6; 
+	cursor: pointer 
+}
+
+.sin_valor {
+	font-style: italic;
+	color: #aaa;
+}
+
+input#valor {
+	width: 100%;
+	border: 0px;
+}
+
+td.dato form div input{
+	display:none;
+}
+
+table.doc_tabla {
+	border:0px;
+	width: 750px;
+	margin: 0px auto 5px auto;
+}
+table.doc_tabla td{
+	padding: 0px 5px;
+	background-color: #ccc;
+	width: 75%;
+}
+
+table.doc_tabla td.actions{
+	width: 25%;
+	text-align:center;
+}
+
+table.doc_tabla th{
+	background-color: #555;
+	padding: 1px;
+	color: #ddd;
+}
+
+table.doc_tabla div.doc_actions {
+	float:right;
+}
+
+textarea.eyp {
+	height: 200px;
+	width: 95%;
+}
+
+div.eyp {
+	margin: 5px 15px;
+}
+
+#texto_libre.field textarea{
+	height:100px;
+}

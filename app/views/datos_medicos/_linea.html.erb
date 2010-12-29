@@ -1,0 +1,10 @@
+<tr class="admin_tabla_linea_<%=@class_index%>">
+	<td><%= link_to linea.nombre, edit_dato_medico_path(linea), :remote=>true, :id=>dom_id(linea)+'.nombre' %></td>
+	<td nowrap="nowrap" id="ordenar">
+		<%=link_to image_tag("to_top.png"), move_to_top_dato_medico_path(linea) -%>
+		<%=link_to image_tag("higher.png"), move_higher_dato_medico_path(linea) %>
+		<%=link_to image_tag("lower.png"), move_lower_dato_medico_path(linea) %>
+		<%=link_to image_tag("to_bottom.png"), move_to_bottom_dato_medico_path(linea) %>
+	</td>
+	<td align="right"><%= link_to 'Eliminar', linea, :confirm => 'Esta seguro?', :method => :delete %></td>
+</tr>

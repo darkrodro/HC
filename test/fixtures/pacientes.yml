@@ -1,0 +1,25 @@
+# Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
+
+one:
+  nombre: MyString
+  apellido: MyString
+  documento: 1
+  sexo: MyString
+  fecha_nacimiento: 2010-11-20
+  telefono: MyString
+  domicilio: MyText
+  profesion: MyString
+  personalidad: MyText
+  obra_social: MyString
+
+two:
+  nombre: MyString
+  apellido: MyString
+  documento: 1
+  sexo: MyString
+  fecha_nacimiento: 2010-11-20
+  telefono: MyString
+  domicilio: MyText
+  profesion: MyString
+  personalidad: MyText
+  obra_social: MyString

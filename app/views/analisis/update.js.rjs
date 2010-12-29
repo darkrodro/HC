@@ -1,0 +1,5 @@
+
+page.replace_html dom_id(@analisis)+'.nombre', @analisis.nombre
+page.replace_html dom_id(@analisis)+'.arancel', @analisis.arancel
+
+page.hide('pop_up')

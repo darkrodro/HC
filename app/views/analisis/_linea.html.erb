@@ -1,0 +1,5 @@
+<tr class="admin_tabla_linea_<%=@class_index%>">
+	<td><%= link_to linea.nombre, edit_analisis_path(linea), :remote=>true, :id=>dom_id(linea)+'.nombre' %></td>
+	<td align="right" id="<%=dom_id(linea)%>.arancel"><%= linea.arancel %></td>
+	<td align="right"><%= link_to 'Eliminar', linea, :confirm => 'Esta seguro?', :method => :delete %></td>
+</tr>

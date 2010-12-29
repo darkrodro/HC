@@ -1,0 +1,36 @@
+<% content_for :content do %>
+	<script language="JavaScript">
+		function validSearch(){
+			var doc = document.getElementById("documento").value;
+			var nom = document.getElementById("nombre").value;
+			var ape = document.getElementById("apellido").value;
+			
+			return doc.length>0 || nom.length>0 || ape.length>0;
+		}
+		
+	</script>
+	<table cellspacing="0" style="height:100%; width:100%">
+		<tr>
+			<td id="busqueda_menu">
+				<div style="float:left; margin-left:20px">
+				<%= form_tag(buscar_pacientes_path, :method=>:get, :onsubmit=>"return validSearch()") do%>
+					Documento: <%= text_field_tag :documento, params[:documento]%>
+					Apellido: <%= text_field_tag :apellido, params[:apellido]%> 
+					Nombre: <%= text_field_tag :nombre, params[:nombre]%>
+					<%= submit_tag "Buscar Pacientes" %>
+				<%end%>
+				</div>
+				<div style="float:right; margin-right:20px">				
+					<%=button_to "Nuevo Paciente", new_paciente_path, :method=>:get%>
+				</div>
+				
+			</td>
+		</tr>
+		<tr>
+			<td id="paciente_content">
+				<%= content_for?(:paciente_content) ? yield(:paciente_content) : yield %>				
+			</td>
+		</tr>
+	</table>  
+<% end %> 
+<%= render :file => 'layouts/application' %> 

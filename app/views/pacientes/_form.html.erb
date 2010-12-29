@@ -1,0 +1,54 @@
+<%= form_for(@paciente) do |f| %>
+  <% if @paciente.errors.any? %>
+    <div id="error_explanation">
+    	<h2>No se pudo guardar el paciente debido a <%= pluralize(@paciente.errors.count, "error", "errores") %>:</h2>
+      <ul>
+      <% @paciente.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+  
+  <table id="paciente_datos">
+  	<tr>
+		<td class="campo"><%= f.label :nombre %></td>
+		<td class="dato"><%= f.text_field :nombre %></td>
+		<td class="campo"><%= f.label :apellido %></td>
+		<td class="dato"><%= f.text_field :apellido %></td>
+	</tr>
+	<tr>
+		<td class="campo"> <%= f.label :documento %></td>
+		<td class="dato"><%= f.text_field :documento %></td>
+		<td class="campo"><%= f.label :sexo %></td>
+		<td class="dato"><%= f.radio_button :sexo, :Masculino %> Masculino <%= f.radio_button :sexo, :Femenino %> Femenino</td>
+	</tr>
+	<tr>
+		<td class="campo"><%= f.label :fecha_nacimiento, "Fecha de nacimiento" %></td>
+		<td class="dato"><%= f.date_select :fecha_nacimiento, :start_year=>1900, :end_year=>Time.now.year %>
+		</td>
+		<td class="campo"><%= f.label :telefono %></td>
+		<td class="dato"> <%= f.text_field :telefono %></td>
+	</tr>
+	<tr>
+		<td class="campo"><%= f.label :obra_social %></td>
+		<td class="dato"><%= f.text_field :obra_social %></td>
+		<td class="campo"><%= f.label :obra_social_numero, "Numero de Obra Social" %></td>
+		<td class="dato"><%= f.text_field :obra_social_numero %></td>
+	</tr>
+	<tr>
+		<td class="campo"><%= f.label :profesion %></td>
+		<td class="dato"><%= f.text_field :profesion %></td>
+		<td class="campo"></td>
+		<td class="dato"></td>
+	</tr>
+	<tr>
+		<td class="campo"><%= f.label :domicilio %></td>
+		<td colspan="3" class="dato"><%= f.text_area :domicilio %></td>
+	</tr>
+</table>
+ <div class="actions" style="margin-right:10px">
+    <%= f.submit 'Guardar'%>
+ </div>
+  
+<% end %>

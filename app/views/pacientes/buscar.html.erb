@@ -1,0 +1,24 @@
+<div id="paciente_titulo">Resultado de la Busqueda</div>
+
+<table class="admin_tabla">
+  <tr>
+  	<th>Documento</th>
+    <th>Apellido</th>
+	<th>Nombre</th>
+    <th>Fecha nacimiento</th>
+  </tr>
+
+<% 
+@class_index = 1;
+@pacientes.each do |paciente| 
+@class_index = (@class_index+1) % 2 
+%>
+  <tr class="admin_tabla_linea_<%=@class_index%>">
+    <td><%= link_to paciente.documento, paciente %></td>
+    <td><%= link_to paciente.apellido, paciente %></td>
+	<td><%= link_to paciente.nombre, paciente %></td>
+    <td><%= link_to paciente.fecha_nacimiento, paciente if paciente.fecha_nacimiento%></td>
+  </tr>
+<% end %>
+</table>
+

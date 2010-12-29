@@ -5,6 +5,7 @@ class EstudiosController < ApplicationController
   # GET /estudios.xml
   def index
     @estudios = Estudio.all
+    @estudios_eliminados= Estudio.unscoped.with_state(:deleted).order(:nombre)
 
     respond_to do |format|
       format.html # index.html.erb
@@ -28,7 +29,6 @@ class EstudiosController < ApplicationController
     @estudio = Estudio.new
 
     respond_to do |format|
-      format.xml  { render :xml => @estudio }
       format.js {render :form}
     end
   end
@@ -82,4 +82,15 @@ class EstudiosController < ApplicationController
       format.xml  { head :ok }
     end
   end
+  
+  def restore
+    @estudio = Estudio.unscoped.find(params[:id])
+    @estudio.restore
+
+    respond_to do |format|
+      format.html { redirect_to(estudios_url) }
+      format.xml  { head :ok }
+    end
+  end
+  
 end

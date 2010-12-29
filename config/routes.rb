@@ -1,8 +1,38 @@
 HC::Application.routes.draw do
+  
+  resources :pacientes do
+    resources :datos, :controller=>"evaluaciones" do
+      post :update
+    end
+    resources :visitas do
+      resources :documentos
+    end
+    
+    get :autocomplete_paciente_documento, :on => :collection
+    get :buscar, :on=>:collection
+  end
+
+
   get "home/index"
+  
+  resource :encabezado_y_pie, :only=>[:show, :update], :controller=>:encabezado_y_pie
 
-  resources :estudios
+  resources :estudios do
+      get 'restore', :on => :member
+  end
 
+  resources :analisis do
+      get 'restore', :on => :member
+  end
+
+  resources :datos_medicos do
+      get 'restore', :on => :member
+      get 'move_higher', :on => :member
+      get 'move_lower', :on => :member
+      get 'move_to_top', :on => :member
+      get 'move_to_bottom', :on => :member
+  end
+  
   # The priority is based upon order of creation:
   # first created -> highest priority.
 

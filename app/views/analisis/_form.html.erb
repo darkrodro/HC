@@ -1,0 +1,25 @@
+
+<%= form_for(@analisis, :remote=>true) do |f| %>
+  <% if @analisis.errors.any? %>
+    <div id="error_explanation">
+      <h2>No se pudo guardar el analisis debido a <%= pluralize(@analisis.errors.count, "error", "errores") %>:</h2>
+
+      <ul>
+      <% @analisis.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+  <div class="field">
+    <%= f.label :nombre %><br />
+    <%= f.text_field :nombre %>
+  </div>
+  <div class="field">
+    <%= f.label :arancel %><br />
+    <%= f.text_field :arancel %>
+  </div>
+  <div class="actions">
+    <%= f.submit 'Guardar'%>
+  </div>
+<% end %>

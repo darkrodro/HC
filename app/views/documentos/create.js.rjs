@@ -1,0 +1,1 @@
+page.redirect_to paciente_visitas_path(@paciente)

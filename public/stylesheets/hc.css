@@ -7,7 +7,7 @@
 }
 
 #header{
-	height: 75px;
+	height: 100px;
 	position: relative;
 	background-color: #beb;
 	border-bottom: 3px solid #bbe;
@@ -216,6 +216,25 @@ div.actions input:hover, .admin_tabla_footer input:hover, #busqueda_menu input:h
                 StartColorStr='#bbbbee', EndColorStr='#ffffff', GradientType=1);
 
 	padding:10px 0px 10px 10px;
+	margin: 0px 0px 0px 0px; 
+	text-transform: uppercase;
+}
+
+#paciente_subtitulo{
+	font-size: 15px;
+	width: 90%;
+	/* fallback*/
+    background: #bbe;
+    /* Mozilla: */
+    background: -moz-linear-gradient(left, #bbbbee, #ffffff);
+    /* Chrome, Safari:*/
+    background: -webkit-gradient(linear,
+                left top, right top, from(#bbbbee), to(#ffffff));
+    /* MSIE */
+    filter: progid:DXImageTransform.Microsoft.Gradient(
+                StartColorStr='#bbbbee', EndColorStr='#ffffff', GradientType=1);
+
+	padding:3px 0px 3px 10px;
 	margin: 0px 0px 0px 0px; 
 	text-transform: uppercase;
 }

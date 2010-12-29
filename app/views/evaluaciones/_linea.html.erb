@@ -1,0 +1,17 @@
+<tr>
+	<td class="campo"><%=linea.dato_medico.nombre%></td>
+	<td class="dato" style="width:75%">
+		<div class='editable' id="<%=dom_id(linea.dato_medico)%>">
+			<% if linea.valor%>
+				<%=linea.valor-%>
+			<%else%>
+				&nbsp;&nbsp;&nbsp;&nbsp;
+			<%end%> 
+		</div>
+		<%= form_tag dato_update_path(@paciente, linea.dato_medico), :remote=>true, :autocomplete=>:off, :style=>"display:none" do
+			text_field_tag :valor, linea.valor	
+		end%>		
+	</td>
+</tr>
+
+

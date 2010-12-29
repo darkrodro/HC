@@ -1,0 +1,2 @@
+valor = !@evaluacion.valor.empty? ? escape_javascript(@evaluacion.valor) : raw("&nbsp;&nbsp;&nbsp;&nbsp;")
+page.replace_html "dato_medico_#{+@evaluacion.dato_medico_id}", valor

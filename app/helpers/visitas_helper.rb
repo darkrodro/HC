@@ -1,0 +1,2 @@
+module VisitasHelper
+end

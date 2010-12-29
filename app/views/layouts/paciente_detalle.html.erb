@@ -1,0 +1,19 @@
+<% content_for :paciente_content do %>
+	<table cellspacing="0" style="height:100%">
+		<tr>
+			<td id="admin_menu">
+				<ul id="admin_menu_items">
+					<li><%= link_to 'Información Personal', paciente_path(@paciente) %></li>
+					<li><%= link_to 'Información Medica', paciente_datos_path(@paciente) %></li>
+					<li><%= link_to 'Visitas',  paciente_visitas_path(@paciente) %></li>
+				</ul>		
+			</td>
+			<td id="admin_content">
+				<div id="paciente_titulo"><%= @paciente.nombre.force_encoding('utf-8') %> <%= @paciente.apellido.force_encoding('utf-8') %></div>
+				<div id="paciente_subtitulo"><%= @paciente.obra_social.force_encoding('utf-8')%> <%= @paciente.obra_social_numero %></div>
+				<%= yield %>				
+			</td>
+		</tr>
+	</table>
+<% end %> 
+<%= render :file => 'layouts/paciente' %> 

@@ -1,0 +1,50 @@
+<p></p>
+
+<table id="paciente_datos">
+
+<%@datos.each do |dato|%>
+	<%=render :partial=>'linea', :object=>dato, :locals=>{:class_index=>@class_index}%>
+<%end%>
+</table>
+
+<script language="JavaScript">
+	 var editables = $A($$(".editable"));
+  editables.each(function(text) {
+    var form = Element.next(text);
+    text.observe('click', function() {
+      text.hide();
+      form.show();
+      form.focusFirstElement();
+ 
+      // when clicking outside of the form
+      var clickObserver = function(event) {
+        var element = Event.element(event);
+        if(element == text || element.descendantOf(form))
+          return;
+        if(form.style.display == "") {
+          form.fire("ajax:before");
+          form.request();
+        }
+        Event.stopObserving(document, "click", clickObserver);
+      };
+      Event.observe(document, "click", clickObserver);
+ 
+      // when escape key
+      Event.observe(document, "keyup", function(event) {
+        if (event.keyCode == Event.KEY_ESC) {
+          form.hide();
+          text.show();
+        }
+      });
+ 
+      // when form submit
+      form.observe("ajax:before", function() {
+        form.hide();
+        text.show();
+        text.update("<i>(guardando...)</i>");
+      });
+    });
+  });
+
+</script>
+

@@ -1,0 +1,39 @@
+page.show('pop_up')
+page.replace_html :PUF_contenido, :partial=>'form', :object=>@documento
+
+page << 'analisis2contenido = function(){
+    anals = document.getElementsByName("analisis[]");
+    cont = document.getElementById("documento_contenido");
+    cont.value="";
+        for (var i = 0; i < anals.length; i++) { 
+	a = anals[i];
+      if(a.checked)
+        cont.value += a.value + "\n";
+    }
+  }'
+  
+page << 'estudios2contenido = function(){
+    anals = document.getElementsByName("estudios[]");
+    cont = document.getElementById("documento_contenido");
+    cont.value="";
+        for (var i = 0; i < anals.length; i++) { 
+	a = anals[i];
+      if(a.checked)
+        cont.value += a.value + "\n";
+    }
+  }' 
+  
+page << 'showHideDiv = function(tipo){
+      document.getElementById("documento_contenido").value="";
+
+	if(tipo=="indicaciones" || tipo=="receta")
+		tipo = "texto_libre";
+
+      document.getElementById("texto_libre").style.display = "none";
+      document.getElementById("analisis").style.display = "none";
+      document.getElementById("estudios").style.display = "none";
+      
+      document.getElementById(tipo).style.display = "block";
+  }'  
+
+page << "showHideDiv('#{@documento.tipo}');"

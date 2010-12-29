@@ -1,0 +1,78 @@
+<p id="notice"><%= notice %></p>
+
+<div style="float:right; margin-right:20px" id="visitas_action">
+	<%= button_to 'Nueva Visita', new_paciente_visita_path(@paciente), :method=>:get %>
+</div>
+
+<% @visitas.each do |visita| %>
+
+<table id="paciente_datos">
+	<tr>
+		<th class="dato" colspan="3">Visita del <%= visita.fecha %></th>
+		<th class="actions">
+			<%= link_to 'Editar', edit_paciente_visita_path(@paciente, visita) %>
+			|
+			<%= link_to 'Eliminar', [@paciente, visita], :confirm => '¿Esta seguro?', :method => :delete %>
+		</th>
+	</tr>
+	<tr>
+		<td class="campo">Estado actual</td>
+		<td class="dato"><%= visita.estado_actual %></td>
+		<td class="campo">Presión arterial</td>
+		<td class="dato"><%= visita.presion_arterial %></td>
+	</tr>
+	<tr>
+		<td class="campo">Pulso</td>
+		<td class="dato"><%= visita.pulso %></td>
+		<td class="campo">Auscultación</td>
+		<td class="dato"><%= visita.auscultacion %></td>
+	</tr>
+	<tr>
+		<td class="campo">Aparato respiratorio</td>
+		<td class="dato"><%= visita.aparato_respiratorio %></td>
+		<td class="campo">Otros aparatos</td>
+		<td class="dato"><%= visita.otros_aparatos %></td>
+	</tr>
+	<tr>
+		<td class="campo">E.C.G.</td>
+		<td class="dato"><%= visita.ecg %></td>
+		<td class="campo">RX de torax</td>
+		<td class="dato"><%= visita.rx_del_torax %></td>
+	</tr>
+	<tr>
+		<td class="campo">Analisis</td>
+		<td class="dato"><%= visita.analisis %></td>
+		<td class="campo">Otros estudios</td>
+		<td class="dato"><%= visita.otros_estudios %></td>
+	</tr>
+	<tr>
+		<td class="campo">Tratamiento</td>
+		<td class="dato"><%= visita.tratamiento %></td>
+		<td class="campo">Observaciones</td>
+		<td class="dato"><%= visita.observaciones %></td>
+	</tr>
+</table>	
+<table class="doc_tabla">
+	<tr>
+		<th colspan="2">
+			Documentos
+			<div class="doc_actions">
+				<%= button_to 'Nuevo Documento', new_paciente_visita_documento_path(@paciente, visita), :remote=>true, :method=>:get %>
+			</div> 
+		</th>
+	</tr>
+	<% visita.documentos.each do |documento| %>
+	<tr>
+		<td><b><%=documento.tipo.capitalize%>:</b> <%=summarize(documento.contenido)%></td>
+		<td class="actions">
+			<%= link_to 'Ver', paciente_visita_documento_path(@paciente, visita, documento, :format=>:pdf)%>
+			| 
+			<%= link_to 'Eliminar', [@paciente, visita, documento], :confirm => '¿Esta seguro?', :method => :delete %>
+		</td>
+	</tr>
+	<%end%>
+</table>			
+
+<% end %>
+
+<%=render 'shared/popup'%>

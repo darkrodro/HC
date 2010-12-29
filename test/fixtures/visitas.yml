@@ -1,0 +1,31 @@
+# Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
+
+one:
+  fecha: 2010-12-08 12:48:10
+  ecg: MyString
+  estado_actual: MyString
+  rx_del_torax: MyString
+  presion_arterial: MyString
+  analisis: MyString
+  pulso: MyString
+  auscultacion: MyString
+  otros_estudios: MyString
+  aparato_respiratorio: MyString
+  tratamiendo: MyString
+  otros_aparatos: MyString
+  observaciones: MyString
+
+two:
+  fecha: 2010-12-08 12:48:10
+  ecg: MyString
+  estado_actual: MyString
+  rx_del_torax: MyString
+  presion_arterial: MyString
+  analisis: MyString
+  pulso: MyString
+  auscultacion: MyString
+  otros_estudios: MyString
+  aparato_respiratorio: MyString
+  tratamiendo: MyString
+  otros_aparatos: MyString
+  observaciones: MyString

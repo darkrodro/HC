@@ -1,0 +1,278 @@
+
+#<Paciente id: nil, nombre: "JUAN CARLOS MARIA", apellido: "DAVISON ", documento: 4019798, sexo: nil, fecha_nacimiento: "1925-06-09", telefono: "792-2987", domicilio: "HIPOLITO YRIGOYEN 1 24 CAP", profesion: "", obra_social: "OSPLAD", obra_social_numero: "1-1694265-7/01", created_at: nil, updated_at: nil>
+Documento ya esta en uso. -- Se agregan 0s al final.
+Nuevo documento: 40197980
+
+#<Paciente id: nil, nombre: "GLORIA", apellido: "TEME ", documento: 11456946, sexo: nil, fecha_nacimiento: "1954-09-16", telefono: "811-4207", domicilio: "CALLAO 1985 10 CAP", profesion: "", obra_social: "OSPLAD", obra_social_numero: "4-11456946-3/00", created_at: nil, updated_at: nil>
+Documento ya esta en uso. -- Se agregan 0s al final.
+Nuevo documento: 114569460
+
+#<Paciente id: nil, nombre: "RODRIGUEZ MARIA", apellido: "BANGO ", documento: 4, sexo: "Femenino", fecha_nacimiento: "1920-09-12", telefono: "48015354", domicilio: "SCALABRINI ORTIZ 2999 CAP", profesion: "RELIGIOSA", obra_social: "OSPLAD", obra_social_numero: "4-93279472-1/00", created_at: nil, updated_at: nil>
+Documento ya esta en uso. -- Se agregan 0s al final.
+Nuevo documento: 40
+
+#<Paciente id: nil, nombre: "PATRICIA MONICA", apellido: "KOURDOGLANIAN ", documento: 1, sexo: "Femenino", fecha_nacimiento: "1958-07-16", telefono: "45516284", domicilio: "AV EL CANO 3200 6 A", profesion: "COMERCIANTE", obra_social: "ACCORD", obra_social_numero: "", created_at: nil, updated_at: nil>
+Documento ya esta en uso. -- Se agregan 0s al final.
+Nuevo documento: 10
+
+#<Paciente id: nil, nombre: "opjp", apellido: nil, documento: 7897, sexo: "Masculino", fecha_nacimiento: "1942-12-01", telefono: "456", domicilio: "JHUOL", profesion: "", obra_social: "Particular", obra_social_numero: "", created_at: nil, updated_at: nil>
+Apellido debe ser completado. -- Se utilizo el nombre (opjp)
+
+#<Paciente id: nil, nombre: "MARIA", apellido: "VETERE ", documento: 1, sexo: "Femenino", fecha_nacimiento: "1954-02-24", telefono: "48569290", domicilio: "GURRUCHAGA 527 8 PISO", profesion: "AMA DE CASA", obra_social: "OSDE", obra_social_numero: "60752477302", created_at: nil, updated_at: nil>
+Documento ya esta en uso. -- Se agregan 0s al final.
+Nuevo documento: 100
+
+#<Paciente id: nil, nombre: "CABANA", apellido: nil, documento: 4332354, sexo: "Femenino", fecha_nacimiento: nil, telefono: "", domicilio: "", profesion: "", obra_social: "Particular", obra_social_numero: "", created_at: nil, updated_at: nil>
+Apellido debe ser completado. -- Se utilizo el nombre (CABANA)
+
+#<Paciente id: nil, nombre: "JORGE", apellido: "REPETTO ", documento: 1, sexo: "Masculino", fecha_nacimiento: "1932-01-06", telefono: "47721513", domicilio: "LUIS M CAMPOS 104 DTO A", profesion: "", obra_social: "OSOSS", obra_social_numero: "6843/00", created_at: nil, updated_at: nil>
+Documento ya esta en uso. -- Se agregan 0s al final.
+Nuevo documento: 1000
+
+#<Paciente id: nil, nombre: "ROSA", apellido: "GUERRI ", documento: 9, sexo: "Femenino", fecha_nacimiento: nil, telefono: "", domicilio: "", profesion: "", obra_social: "Particular", obra_social_numero: "", created_at: nil, updated_at: nil>
+Documento ya esta en uso. -- Se agregan 0s al final.
+Nuevo documento: 90
+
+#<Paciente id: nil, nombre: " SILVANA", apellido: "moscoloni ", documento: 4, sexo: "Femenino", fecha_nacimiento: nil, telefono: "", domicilio: "", profesion: "", obra_social: "Particular", obra_social_numero: "", created_at: nil, updated_at: nil>
+Documento ya esta en uso. -- Se agregan 0s al final.
+Nuevo documento: 400
+
+#<Paciente id: nil, nombre: "SILVANA", apellido: "moscoloni ", documento: 8, sexo: "Femenino", fecha_nacimiento: nil, telefono: "", domicilio: "", profesion: "", obra_social: "Particular", obra_social_numero: "", created_at: nil, updated_at: nil>
+Documento ya esta en uso. -- Se agregan 0s al final.
+Nuevo documento: 80
+
+#<Paciente id: nil, nombre: "GRACIELA BEATRIZ", apellido: "COLOMBO ", documento: 9, sexo: nil, fecha_nacimiento: nil, telefono: "", domicilio: "", profesion: "", obra_social: "Particular", obra_social_numero: "", created_at: nil, updated_at: nil>
+Documento ya esta en uso. -- Se agregan 0s al final.
+Nuevo documento: 900
+
+#<Paciente id: nil, nombre: "marcelo", apellido: "fernandez ", documento: 1, sexo: "Masculino", fecha_nacimiento: nil, telefono: "", domicilio: "", profesion: "", obra_social: "Particular", obra_social_numero: "", created_at: nil, updated_at: nil>
+Documento ya esta en uso. -- Se agregan 0s al final.
+Nuevo documento: 10000
+
+#<Paciente id: nil, nombre: "OLIVERMARIA", apellido: nil, documento: 2, sexo: "Femenino", fecha_nacimiento: nil, telefono: "", domicilio: "LUGANO 1-2 EDIF 145 1RO A", profesion: "", obra_social: "Particular", obra_social_numero: "", created_at: nil, updated_at: nil>
+Apellido debe ser completado. -- Se utilizo el nombre (OLIVERMARIA)
+
+#<Paciente id: nil, nombre: "MARCELO", apellido: "FERNANDEZ ", documento: 1, sexo: nil, fecha_nacimiento: nil, telefono: "", domicilio: "", profesion: "", obra_social: "Particular", obra_social_numero: "", created_at: nil, updated_at: nil>
+Documento ya esta en uso. -- Se agregan 0s al final.
+Nuevo documento: 100000
+
+#<Paciente id: nil, nombre: "NELIDA", apellido: "QUINTANA ", documento: 9, sexo: "Femenino", fecha_nacimiento: "1946-10-29", telefono: "59010665", domicilio: "COLPAYO 466 PB ACAP", profesion: "", obra_social: "SCIS", obra_social_numero: "17103/01", created_at: nil, updated_at: nil>
+Documento ya esta en uso. -- Se agregan 0s al final.
+Nuevo documento: 9000
+
+#<Paciente id: nil, nombre: "LILIAN", apellido: "CORONA ", documento: 8, sexo: "Femenino", fecha_nacimiento: nil, telefono: "", domicilio: "", profesion: "", obra_social: "Particular", obra_social_numero: "", created_at: nil, updated_at: nil>
+Documento ya esta en uso. -- Se agregan 0s al final.
+Nuevo documento: 800
+
+#<Paciente id: nil, nombre: "HAYDEE", apellido: "NUGNES ", documento: 4, sexo: "Femenino", fecha_nacimiento: "1946-10-17", telefono: "", domicilio: "AV STA FE 1984 7MO E", profesion: "", obra_social: "Particular", obra_social_numero: "", created_at: nil, updated_at: nil>
+Documento ya esta en uso. -- Se agregan 0s al final.
+Nuevo documento: 4000
+
+#<Paciente id: nil, nombre: " ISABEL", apellido: "LOST ", documento: 4, sexo: "Femenino", fecha_nacimiento: nil, telefono: "", domicilio: "", profesion: "", obra_social: "Particular", obra_social_numero: "", created_at: nil, updated_at: nil>
+Documento ya esta en uso. -- Se agregan 0s al final.
+Nuevo documento: 40000
+
+#<Paciente id: nil, nombre: "ISABEL", apellido: "SPANKLER ", documento: 3, sexo: "Femenino", fecha_nacimiento: nil, telefono: "", domicilio: "", profesion: "", obra_social: "PLANAMED", obra_social_numero: "", created_at: nil, updated_at: nil>
+Documento ya esta en uso. -- Se agregan 0s al final.
+Nuevo documento: 30
+
+#<Paciente id: nil, nombre: "BLANCO", apellido: "JOSEFA ", documento: 9, sexo: "Femenino", fecha_nacimiento: nil, telefono: "", domicilio: "", profesion: "", obra_social: "EMERGENCIAS", obra_social_numero: "", created_at: nil, updated_at: nil>
+Documento ya esta en uso. -- Se agregan 0s al final.
+Nuevo documento: 90000
+
+#<Paciente id: nil, nombre: " BORNEMANN", apellido: "HILDA ", documento: 5, sexo: "Femenino", fecha_nacimiento: nil, telefono: "", domicilio: "", profesion: "", obra_social: "Particular", obra_social_numero: "", created_at: nil, updated_at: nil>
+Documento ya esta en uso. -- Se agregan 0s al final.
+Nuevo documento: 50
+
+#<Paciente id: nil, nombre: " GUILLERMINA", apellido: "DESFEO ", documento: 2, sexo: "Femenino", fecha_nacimiento: nil, telefono: "", domicilio: "", profesion: "", obra_social: "Particular", obra_social_numero: "", created_at: nil, updated_at: nil>
+Documento ya esta en uso. -- Se agregan 0s al final.
+Nuevo documento: 20
+
+#<Paciente id: nil, nombre: "FERNANDEZ", apellido: "DARIO ", documento: 9, sexo: "Masculino", fecha_nacimiento: nil, telefono: "", domicilio: "", profesion: "", obra_social: "Particular", obra_social_numero: "", created_at: nil, updated_at: nil>
+Documento ya esta en uso. -- Se agregan 0s al final.
+Nuevo documento: 900000
+
+#<Paciente id: nil, nombre: "DOMIZE", apellido: "LAURA ", documento: 7, sexo: "Femenino", fecha_nacimiento: nil, telefono: "", domicilio: "", profesion: "", obra_social: "Particular", obra_social_numero: "", created_at: nil, updated_at: nil>
+Documento ya esta en uso. -- Se agregan 0s al final.
+Nuevo documento: 70
+
+#<Paciente id: nil, nombre: "BURRONSTEFANIA", apellido: nil, documento: 3, sexo: "Femenino", fecha_nacimiento: nil, telefono: "", domicilio: "", profesion: "", obra_social: "Particular", obra_social_numero: "", created_at: nil, updated_at: nil>
+Documento ya esta en uso. -- Se agregan 0s al final.
+Nuevo documento: 300
+
+#<Paciente id: nil, nombre: "BURRONSTEFANIA", apellido: nil, documento: 300, sexo: "Femenino", fecha_nacimiento: nil, telefono: "", domicilio: "", profesion: "", obra_social: "Particular", obra_social_numero: "", created_at: nil, updated_at: nil>
+Apellido debe ser completado. -- Se utilizo el nombre (BURRONSTEFANIA)
+
+#<Paciente id: nil, nombre: "  LAURA", apellido: "DOMIZI ", documento: 8, sexo: "Femenino", fecha_nacimiento: nil, telefono: "", domicilio: "", profesion: "", obra_social: "Particular", obra_social_numero: "", created_at: nil, updated_at: nil>
+Documento ya esta en uso. -- Se agregan 0s al final.
+Nuevo documento: 8000
+
+#<Paciente id: nil, nombre: "HILDA", apellido: "BORNEMAN ", documento: 9, sexo: "Femenino", fecha_nacimiento: "1935-12-25", telefono: "49325832", domicilio: "AV SAN JUAN 2526 6 17 CAP", profesion: "", obra_social: "PLANAMED", obra_social_numero: "00130032088590", created_at: nil, updated_at: nil>
+Documento ya esta en uso. -- Se agregan 0s al final.
+Nuevo documento: 9000000
+
+#<Paciente id: nil, nombre: "ELBIA", apellido: "CASTELANI ", documento: 2, sexo: "Femenino", fecha_nacimiento: nil, telefono: "", domicilio: "", profesion: "", obra_social: "SCIS", obra_social_numero: "", created_at: nil, updated_at: nil>
+Documento ya esta en uso. -- Se agregan 0s al final.
+Nuevo documento: 200
+
+#<Paciente id: nil, nombre: "", apellido: nil, documento: 58, sexo: nil, fecha_nacimiento: nil, telefono: "", domicilio: "", profesion: "", obra_social: "Particular", obra_social_numero: "", created_at: nil, updated_at: nil>
+Apellido debe ser completado. -- Se utilizo el nombre ()
+
+#<Paciente id: nil, nombre: "", apellido: "", documento: 58, sexo: nil, fecha_nacimiento: nil, telefono: "", domicilio: "", profesion: "", obra_social: "Particular", obra_social_numero: "", created_at: nil, updated_at: nil>
+El valor del campo Nombre debe ser completado.
+El valor del campo Apellido debe ser completado.
+No se pudo migrar
+
+#<Paciente id: nil, nombre: "", apellido: nil, documento: 6354, sexo: nil, fecha_nacimiento: nil, telefono: "", domicilio: "", profesion: "", obra_social: "Particular", obra_social_numero: "", created_at: nil, updated_at: nil>
+Apellido debe ser completado. -- Se utilizo el nombre ()
+
+#<Paciente id: nil, nombre: "", apellido: "", documento: 6354, sexo: nil, fecha_nacimiento: nil, telefono: "", domicilio: "", profesion: "", obra_social: "Particular", obra_social_numero: "", created_at: nil, updated_at: nil>
+El valor del campo Nombre debe ser completado.
+El valor del campo Apellido debe ser completado.
+No se pudo migrar
+
+#<Paciente id: nil, nombre: "MAURICIO", apellido: "CAPUTI ", documento: 8, sexo: "Masculino", fecha_nacimiento: "1926-04-20", telefono: "45461694", domicilio: "MILLIE 3985 CAP", profesion: "", obra_social: "SCIS", obra_social_numero: "0710004065820", created_at: nil, updated_at: nil>
+Documento ya esta en uso. -- Se agregan 0s al final.
+Nuevo documento: 80000
+
+#<Paciente id: nil, nombre: "RAFAEL", apellido: "GPMEZ ", documento: 3, sexo: "Masculino", fecha_nacimiento: nil, telefono: "", domicilio: "", profesion: "ABOGADO", obra_social: "Particular", obra_social_numero: "", created_at: nil, updated_at: nil>
+Documento ya esta en uso. -- Se agregan 0s al final.
+Nuevo documento: 3000
+
+#<Paciente id: nil, nombre: " LILIANA", apellido: "CHIRIZOLA ", documento: 9, sexo: nil, fecha_nacimiento: nil, telefono: "", domicilio: "", profesion: "", obra_social: "Particular", obra_social_numero: "", created_at: nil, updated_at: nil>
+Documento ya esta en uso. -- Se agregan 0s al final.
+Nuevo documento: 90000000
+
+#<Paciente id: nil, nombre: "ARAUJO BALLERINI VINICIUS", apellido: "DE ", documento: 2, sexo: "Masculino", fecha_nacimiento: nil, telefono: "", domicilio: "", profesion: "", obra_social: "OSDE 310", obra_social_numero: "", created_at: nil, updated_at: nil>
+Documento ya esta en uso. -- Se agregan 0s al final.
+Nuevo documento: 2000
+
+#<Paciente id: nil, nombre: " EMMA", apellido: "GARCIA ", documento: 2, sexo: "Femenino", fecha_nacimiento: nil, telefono: "", domicilio: "", profesion: "", obra_social: "Particular", obra_social_numero: "", created_at: nil, updated_at: nil>
+Documento ya esta en uso. -- Se agregan 0s al final.
+Nuevo documento: 20000
+
+#<Paciente id: nil, nombre: "RAQUEL", apellido: "REMONT ", documento: 8, sexo: "Femenino", fecha_nacimiento: "1928-04-19", telefono: "", domicilio: "JUNCAL 1185   TEMPERLEY", profesion: "", obra_social: "Particular", obra_social_numero: "", created_at: nil, updated_at: nil>
+Documento ya esta en uso. -- Se agregan 0s al final.
+Nuevo documento: 800000
+
+#<Paciente id: nil, nombre: "CARLOS", apellido: "OURAL ", documento: 7, sexo: "Masculino", fecha_nacimiento: "1947-10-18", telefono: "45510849", domicilio: "ALVAREZ THOMAS 833 8 F CAP", profesion: "TALLER DE MARMOLERIA", obra_social: "UAI", obra_social_numero: "01-0148231-01", created_at: nil, updated_at: nil>
+Documento ya esta en uso. -- Se agregan 0s al final.
+Nuevo documento: 700
+
+#<Paciente id: nil, nombre: "NORA", apellido: "MEDINA ", documento: 1, sexo: nil, fecha_nacimiento: nil, telefono: "", domicilio: "", profesion: "", obra_social: "Particular", obra_social_numero: "", created_at: nil, updated_at: nil>
+Documento ya esta en uso. -- Se agregan 0s al final.
+Nuevo documento: 1000000
+
+#<Paciente id: nil, nombre: "MARTA", apellido: "SOSA ", documento: 9, sexo: "Femenino", fecha_nacimiento: "1947-01-22", telefono: "45548167", domicilio: "ROSETI 1472 CAP", profesion: "AMA DE CASA", obra_social: "SCIS OSPACA", obra_social_numero: "0710007238410", created_at: nil, updated_at: nil>
+Documento ya esta en uso. -- Se agregan 0s al final.
+Nuevo documento: 900000000
+
+#<Paciente id: nil, nombre: "hs", apellido: nil, documento: 2000582, sexo: "Femenino", fecha_nacimiento: nil, telefono: "", domicilio: "", profesion: "", obra_social: "Particular", obra_social_numero: "", created_at: nil, updated_at: nil>
+Apellido debe ser completado. -- Se utilizo el nombre (hs)
+
+#<Paciente id: nil, nombre: "SKYY", apellido: "KEELY ", documento: 3, sexo: "Femenino", fecha_nacimiento: "1985-02-23", telefono: "48117781", domicilio: "VICENTE LOPEZ 1774 3 5", profesion: "PROFESORA", obra_social: "UAI", obra_social_numero: "0202767902", created_at: nil, updated_at: nil>
+Documento ya esta en uso. -- Se agregan 0s al final.
+Nuevo documento: 30000
+
+#<Paciente id: nil, nombre: "BOSH MAGALI", apellido: "GARCIA ", documento: 3, sexo: nil, fecha_nacimiento: "1998-01-27", telefono: "", domicilio: "", profesion: "", obra_social: "Particular", obra_social_numero: "", created_at: nil, updated_at: nil>
+Documento ya esta en uso. -- Se agregan 0s al final.
+Nuevo documento: 300000
+
+#<Paciente id: nil, nombre: "", apellido: nil, documento: 345, sexo: nil, fecha_nacimiento: nil, telefono: "", domicilio: "", profesion: "", obra_social: "Particular", obra_social_numero: "", created_at: nil, updated_at: nil>
+Apellido debe ser completado. -- Se utilizo el nombre ()
+
+#<Paciente id: nil, nombre: "", apellido: "", documento: 345, sexo: nil, fecha_nacimiento: nil, telefono: "", domicilio: "", profesion: "", obra_social: "Particular", obra_social_numero: "", created_at: nil, updated_at: nil>
+El valor del campo Nombre debe ser completado.
+El valor del campo Apellido debe ser completado.
+No se pudo migrar
+
+#<Paciente id: nil, nombre: "", apellido: nil, documento: 321, sexo: nil, fecha_nacimiento: nil, telefono: "", domicilio: "", profesion: "", obra_social: "Particular", obra_social_numero: "", created_at: nil, updated_at: nil>
+Apellido debe ser completado. -- Se utilizo el nombre ()
+
+#<Paciente id: nil, nombre: "", apellido: "", documento: 321, sexo: nil, fecha_nacimiento: nil, telefono: "", domicilio: "", profesion: "", obra_social: "Particular", obra_social_numero: "", created_at: nil, updated_at: nil>
+El valor del campo Nombre debe ser completado.
+El valor del campo Apellido debe ser completado.
+No se pudo migrar
+
+#<Paciente id: nil, nombre: "", apellido: nil, documento: 22336985, sexo: nil, fecha_nacimiento: nil, telefono: "", domicilio: "", profesion: "", obra_social: "Particular", obra_social_numero: "", created_at: nil, updated_at: nil>
+Apellido debe ser completado. -- Se utilizo el nombre ()
+
+#<Paciente id: nil, nombre: "", apellido: "", documento: 22336985, sexo: nil, fecha_nacimiento: nil, telefono: "", domicilio: "", profesion: "", obra_social: "Particular", obra_social_numero: "", created_at: nil, updated_at: nil>
+El valor del campo Nombre debe ser completado.
+El valor del campo Apellido debe ser completado.
+No se pudo migrar
+
+#<Paciente id: nil, nombre: "", apellido: nil, documento: 1562395, sexo: nil, fecha_nacimiento: nil, telefono: "", domicilio: "", profesion: "", obra_social: "Particular", obra_social_numero: "", created_at: nil, updated_at: nil>
+Apellido debe ser completado. -- Se utilizo el nombre ()
+
+#<Paciente id: nil, nombre: "", apellido: "", documento: 1562395, sexo: nil, fecha_nacimiento: nil, telefono: "", domicilio: "", profesion: "", obra_social: "Particular", obra_social_numero: "", created_at: nil, updated_at: nil>
+El valor del campo Nombre debe ser completado.
+El valor del campo Apellido debe ser completado.
+No se pudo migrar
+
+#<Paciente id: nil, nombre: "FERNANDO", apellido: "RODRIGUEZ ", documento: 3, sexo: "Masculino", fecha_nacimiento: "1991-05-23", telefono: "42563053", domicilio: "CALLE 15 B4461 BERAZATEGUI", profesion: "", obra_social: "Particular", obra_social_numero: "", created_at: nil, updated_at: nil>
+Documento ya esta en uso. -- Se agregan 0s al final.
+Nuevo documento: 3000000
+
+#<Paciente id: nil, nombre: "", apellido: nil, documento: 2, sexo: nil, fecha_nacimiento: nil, telefono: "", domicilio: "", profesion: "", obra_social: "Particular", obra_social_numero: "", created_at: nil, updated_at: nil>
+Documento ya esta en uso. -- Se agregan 0s al final.
+Nuevo documento: 200000
+
+#<Paciente id: nil, nombre: "", apellido: nil, documento: 200000, sexo: nil, fecha_nacimiento: nil, telefono: "", domicilio: "", profesion: "", obra_social: "Particular", obra_social_numero: "", created_at: nil, updated_at: nil>
+Apellido debe ser completado. -- Se utilizo el nombre ()
+
+#<Paciente id: nil, nombre: "", apellido: "", documento: 200000, sexo: nil, fecha_nacimiento: nil, telefono: "", domicilio: "", profesion: "", obra_social: "Particular", obra_social_numero: "", created_at: nil, updated_at: nil>
+El valor del campo Nombre debe ser completado.
+El valor del campo Apellido debe ser completado.
+No se pudo migrar
+
+#<Paciente id: nil, nombre: "", apellido: nil, documento: 123221, sexo: nil, fecha_nacimiento: nil, telefono: "", domicilio: "", profesion: "", obra_social: "Particular", obra_social_numero: "", created_at: nil, updated_at: nil>
+Apellido debe ser completado. -- Se utilizo el nombre ()
+
+#<Paciente id: nil, nombre: "", apellido: "", documento: 123221, sexo: nil, fecha_nacimiento: nil, telefono: "", domicilio: "", profesion: "", obra_social: "Particular", obra_social_numero: "", created_at: nil, updated_at: nil>
+El valor del campo Nombre debe ser completado.
+El valor del campo Apellido debe ser completado.
+No se pudo migrar
+
+#<Paciente id: nil, nombre: "", apellido: nil, documento: 4567, sexo: nil, fecha_nacimiento: nil, telefono: "", domicilio: "", profesion: "", obra_social: "Particular", obra_social_numero: "", created_at: nil, updated_at: nil>
+Apellido debe ser completado. -- Se utilizo el nombre ()
+
+#<Paciente id: nil, nombre: "", apellido: "", documento: 4567, sexo: nil, fecha_nacimiento: nil, telefono: "", domicilio: "", profesion: "", obra_social: "Particular", obra_social_numero: "", created_at: nil, updated_at: nil>
+El valor del campo Nombre debe ser completado.
+El valor del campo Apellido debe ser completado.
+No se pudo migrar
+
+#<Paciente id: nil, nombre: "ULIBARRI JUAN", apellido: "GARCIA ", documento: 3, sexo: nil, fecha_nacimiento: "1938-03-04", telefono: "", domicilio: "", profesion: "", obra_social: "OSFE", obra_social_numero: "030426791200", created_at: nil, updated_at: nil>
+Documento ya esta en uso. -- Se agregan 0s al final.
+Nuevo documento: 30000000
+
+#<Paciente id: nil, nombre: "", apellido: nil, documento: 12345, sexo: nil, fecha_nacimiento: nil, telefono: "", domicilio: "", profesion: "", obra_social: "Particular", obra_social_numero: "", created_at: nil, updated_at: nil>
+Apellido debe ser completado. -- Se utilizo el nombre ()
+
+#<Paciente id: nil, nombre: "", apellido: "", documento: 12345, sexo: nil, fecha_nacimiento: nil, telefono: "", domicilio: "", profesion: "", obra_social: "Particular", obra_social_numero: "", created_at: nil, updated_at: nil>
+El valor del campo Nombre debe ser completado.
+El valor del campo Apellido debe ser completado.
+No se pudo migrar
+
+#<Paciente id: nil, nombre: "", apellido: nil, documento: 1347096, sexo: nil, fecha_nacimiento: nil, telefono: "", domicilio: "", profesion: "", obra_social: "Particular", obra_social_numero: "", created_at: nil, updated_at: nil>
+Apellido debe ser completado. -- Se utilizo el nombre ()
+
+#<Paciente id: nil, nombre: "", apellido: "", documento: 1347096, sexo: nil, fecha_nacimiento: nil, telefono: "", domicilio: "", profesion: "", obra_social: "Particular", obra_social_numero: "", created_at: nil, updated_at: nil>
+El valor del campo Nombre debe ser completado.
+El valor del campo Apellido debe ser completado.
+No se pudo migrar
+
+#<Paciente id: nil, nombre: "GALINDO", apellido: nil, documento: 27856267, sexo: nil, fecha_nacimiento: nil, telefono: "", domicilio: "", profesion: "", obra_social: "Particular", obra_social_numero: "", created_at: nil, updated_at: nil>
+Apellido debe ser completado. -- Se utilizo el nombre (GALINDO)
+
+#<Paciente id: nil, nombre: "JULIO", apellido: "ECHEGUREN ", documento: 1, sexo: "Masculino", fecha_nacimiento: "1934-10-18", telefono: "", domicilio: "", profesion: "", obra_social: "Particular", obra_social_numero: "", created_at: nil, updated_at: nil>
+Documento ya esta en uso. -- Se agregan 0s al final.
+Nuevo documento: 10000000
+
+#<Paciente id: nil, nombre: "", apellido: nil, documento: 1243441, sexo: nil, fecha_nacimiento: nil, telefono: "", domicilio: "", profesion: "", obra_social: "Particular", obra_social_numero: "", created_at: nil, updated_at: nil>
+Apellido debe ser completado. -- Se utilizo el nombre ()
+
+#<Paciente id: nil, nombre: "", apellido: "", documento: 1243441, sexo: nil, fecha_nacimiento: nil, telefono: "", domicilio: "", profesion: "", obra_social: "Particular", obra_social_numero: "", created_at: nil, updated_at: nil>
+El valor del campo Nombre debe ser completado.
+El valor del campo Apellido debe ser completado.
+No se pudo migrar

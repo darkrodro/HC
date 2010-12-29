@@ -1,0 +1,59 @@
+<%= form_for([@paciente, @visita]) do |f| %>
+  <% if @visita.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@visita.errors.count, "error") %> prohibited this visita from being saved:</h2>
+
+      <ul>
+      <% @visita.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+  <table id="paciente_datos">
+	<tr>
+		<td class="campo"><%= f.label :fecha %></th>
+		<td class="dato" colspan="3"><%= f.date_select :fecha %></td>
+	</tr>
+	<tr>
+		<td class="campo">Estado actual</td>
+		<td class="dato"><%= f.text_field :estado_actual %></td>
+		<td class="campo">Presión arterial</td>
+		<td class="dato"><%= f.text_field :presion_arterial %></td>
+	</tr>
+	<tr>
+		<td class="campo">Pulso</td>
+		<td class="dato"><%= f.text_field :pulso %></td>
+		<td class="campo">Auscultación</td>
+		<td class="dato"><%= f.text_field :auscultacion %></td>
+	</tr>
+	<tr>
+		<td class="campo">Aparato respiratorio</td>
+		<td class="dato"><%= f.text_field :aparato_respiratorio %></td>
+		<td class="campo">Otros aparatos</td>
+		<td class="dato"><%= f.text_field :otros_aparatos %></td>
+	</tr>
+	<tr>
+		<td class="campo">E.C.G.</td>
+		<td class="dato"><%= f.text_field :ecg %></td>
+		<td class="campo">RX de torax</td>
+		<td class="dato"><%= f.text_field :rx_del_torax %></td>
+	</tr>
+	<tr>
+		<td class="campo">Analisis</td>
+		<td class="dato"><%= f.text_field :analisis %></td>
+		<td class="campo">Otros estudios</td>
+		<td class="dato"><%= f.text_field :otros_estudios %></td>
+	</tr>
+	<tr>
+		<td class="campo">Tratamiento</td>
+		<td class="dato"><%= f.text_field :tratamiento %></td>
+		<td class="campo">Observaciones</td>
+		<td class="dato"><%= f.text_field :observaciones %></td>
+	</tr>
+</table>
+
+  <div class="actions" style="margin-right:10px">
+    <%= f.submit 'Guardar'%>
+  </div>
+<% end %>

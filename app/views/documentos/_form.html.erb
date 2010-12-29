@@ -1,0 +1,57 @@
+﻿<%= form_for([@paciente, @visita, @documento], :remote=>true) do |f| %>
+  <% if @documento.errors.any? %>
+    <div id="error_explanation">
+      <h2>No se pudo guardar el documento debido a <%= pluralize(@documento.errors.count, "error", "errores") %>:</h2>
+
+      <ul>
+      <% @documento.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+  <div class="field">
+  	<b><%= f.label :tipo%>:</b>
+  	<%= f.radio_button :tipo, :receta, :onclick=>"showHideDiv(this.value)"%> Receta
+	<%= f.radio_button :tipo, :indicaciones, :onclick=>"showHideDiv(this.value)"%> Indicaciones
+	<%= f.radio_button :tipo, :analisis, :onclick=>"showHideDiv(this.value);analisis2contenido()"%> Analisis
+	<%= f.radio_button :tipo, :estudios, :onclick=>"showHideDiv(this.value);estudios2contenido()"%> Estudios
+  </div>	
+  <div id="texto_libre" class="field">
+    <%= f.text_area :contenido %>
+  </div>
+  <div id="analisis" class="field" style="display:none">
+  	<table>
+  	<% @analisis.in_groups_of(2) do |anals|%>
+		<tr>
+	  	<% anals.each do |anal|
+			if anal
+		%>
+				<td><%= check_box_tag "analisis[]", anal.nombre, false, :onclick=>"analisis2contenido()" %><%=anal.nombre%></td>	
+		<%
+			end
+		end%>
+		</tr>
+	<%end%>
+	</table>
+  </div>
+  <div id="estudios" class="field" style="display:none">
+  	<table style="width:500px">
+  	<% @estudios.in_groups_of(2) do |ests|%>
+		<tr>
+	  	<% ests.each do |est|
+			if est
+		%>
+				<td><%= check_box_tag "estudios[]", est.nombre, false, :onclick=>"estudios2contenido()" %><%=est.nombre%></td>	
+		<%
+			end
+		end%>
+		</tr>
+	<%end%>
+	</table>
+  </div>
+  
+  <div class="actions">
+    <%= f.submit 'Guardar'%>
+  </div>
+<% end %>
